@@ -71,6 +71,18 @@ GROUP BY rpe.salesRepEmployeeNumber, rpe.Name
 ORDER BY ((SUM(rpe.Revenue_employee) - SUM(payment.Payment))/SUM(rpe.Revenue_employee))*100 DESC;
 
 ```
+## Modélisation des Données : Schéma en Étoile
+
+Pour optimiser les performances des rapports et faciliter les analyses croisées, les données brutes de MySQL ont été restructurées en un **Schéma en étoile**.
+
+### 1. Transformation SQL
+Grâce à des requêtes complexes et l'utilisation de **CTEs** (Common Table Expressions), j'ai préparé les tables pour le modèle de données :
+* **Table de Faits :** Centralisation des transactions (`Orders`, `OrderDetails`, `Payments`).
+* **Tables de Dimensions :** Création de vues spécifiques pour les `Produits`, `Clients`, `Bureaux` et `Employés`.
+
+### 2. Table de Temps (Dimension Calendrier)
+Afin de réaliser des analyses temporelles précises (Time Intelligence), j'ai intégré une table de temps via SQL permettant de combler les périodes sans activité
+
 
 ## 🖼️ Aperçu des Dashboards
 
