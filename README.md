@@ -1,31 +1,31 @@
 # Toys_and_models
 Création d'une solution Business Intelligence complète pour l'entreprise Toys &amp; Models. L'objectif est de transformer des données brutes issues d'une base de données relationnelle en indicateurs clés de performance (KPI) actionnables pour trois départements majeurs : Ventes, Finances et Ressources Humaines.
 
-# Toys & Models - Dashboard Décisionnel 360°
+# Toys & Models - Dashboard décisionnel 360°
 
-## Présentation du Projet
+## Présentation du projet
 Ce projet consiste en la création d'une solution de **Business Intelligence** complète pour l'entreprise "Toys & Models", un distributeur mondial de modèles réduits. L'objectif est de transformer des données brutes extraites d'une base de données MySQL en indicateurs clés de performance (KPI) pour piloter les trois piliers de l'entreprise : **Ventes**, **Finances** et **Ressources Humaines**.
 
-## Périmètre de l'Analyse
+## Périmètre de l'analyse
 
-### Dashboard Ventes (Sales)
+### Dashboard ventes (Sales)
 * **Suivi de la performance :** Analyse du chiffre d'affaires mensuel par bureau et par région.
 * **Fidélisation :** Calcul du taux de retour des clients pour identifier les acheteurs réguliers.
 * **Efficacité commerciale :** Analyse du panier moyen et de l'évolution des ventes par catégorie de produits.
 
-### Dashboard Finance
+### Dashboard finance
 * **Rentabilité :** Calcul précis de la marge brute par produit et par ligne de produits.
 * **Trésorerie :** Suivi de la croissance des ventes par trimestre et analyse du montant moyen des paiements.
 * **Gestion des créances :** Identification des retards de paiement et calcul du taux de recouvrement par client.
 
-### Dashboard Ressources Humaines (RH)
+### Dashboard RH
 * **Performance individuelle :** Classement des représentants commerciaux selon le chiffre d'affaires généré.
 * **Gestion des impayés :** Calcul du ratio commandes/paiements par représentant pour responsabiliser les commerciaux sur le recouvrement client.
 * **Logistique interne :** Analyse du délai moyen de traitement des commandes et du taux de livraison en retard.
 
 ---
 
-## Stack Technique
+## Stack technique
 * **Base de données :** MySQL (Requêtage complexe, CTE, et fonctions de fenêtrage).
 * **ETL :** Power Query pour le nettoyage et la structuration des données.
 * **Modélisation :** DAX pour la création de mesures dynamiques.
@@ -75,15 +75,15 @@ ORDER BY ((SUM(rpe.Revenue_employee) - SUM(payment.Payment))/SUM(rpe.Revenue_emp
 ## 🖼️ Aperçu des Dashboards
 
 ### Vue Ventes
-![Dashboard Ventes](Images/Ventes.jpg)
+![Dashboard Ventes](Images/Ventes.png)
 *Analyse du chiffre d'affaires mensuel, du panier moyen et du taux de retour client.*
 
 ### Vue Finances
-![Dashboard Finances](Images/Finances.jpg)
+![Dashboard Finances](Images/Finances.png)
 *Suivi de la croissance trimestrielle, des taux de recouvrement et des délais de paiement.*
 
 ### Vue Ressources Humaines
-![Dashboard RH](Images/RH.jpg)
+![Dashboard RH](Images/RH.png)
 *Visualisation de la performance des représentants et du ratio commandes/paiements par agent.*
 
 ## Structure du Dépôt
