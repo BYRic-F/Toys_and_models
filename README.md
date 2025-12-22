@@ -74,15 +74,15 @@ ORDER BY ((SUM(rpe.Revenue_employee) - SUM(payment.Payment))/SUM(rpe.Revenue_emp
 
 ## 🖼️ Aperçu des Dashboards
 
-### 📈 Vue Ventes
+### Vue Ventes
 ![Dashboard Ventes](Images/Ventes.jpg)
 *Analyse du chiffre d'affaires mensuel, du panier moyen et du taux de retour client.*
 
-### 💰 Vue Finances
+### Vue Finances
 ![Dashboard Finances](Images/Finances.jpg)
 *Suivi de la croissance trimestrielle, des taux de recouvrement et des délais de paiement.*
 
-### 👥 Vue Ressources Humaines
+### Vue Ressources Humaines
 ![Dashboard RH](Images/RH.jpg)
 *Visualisation de la performance des représentants et du ratio commandes/paiements par agent.*
 
